@@ -22,9 +22,9 @@ public class AppConfig {
         http
                 .sessionManagement(manager -> manager.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorizeRequests -> authorizeRequests
-                        .requestMatchers("/api/admin/**").hasAnyRole("RESTAURANT_OWNER", "ADMIN")
-                        .requestMatchers("/api/**").authenticated()
-                        .anyRequest().permitAll()
+                        .requestMatchers("/api/v1/admin/**").hasAnyRole("RESTAURANT_OWNER", "ADMIN")
+                        .requestMatchers("/api/v1/auth/**").permitAll()
+                        .requestMatchers("/api/v1/**").authenticated()
                 )
                 .addFilterBefore(
                         new JwtTokenValidator(),
