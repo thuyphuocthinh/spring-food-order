@@ -5,10 +5,8 @@
 - Spring Security
 - Spring JWT
 - Spring Mail
+- Upload service
 - Stripe Payment
+- Role based access control
 ## Database
 - MySQL
-## Frontend
-- React
-- MUI
-- Redux
