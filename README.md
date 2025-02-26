@@ -7,6 +7,6 @@
 - Spring Mail
 - Upload service
 - Stripe Payment
-- Role based access control
+- Role Based Access Control
 ## Database
 - MySQL
